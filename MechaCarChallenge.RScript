@@ -1,6 +1,30 @@
-MechaCar_mpg <- read.csv("C:/Users/natnael/Documents/UCD Bootcamp/Mod 15 R and Stats/R_Analysis/01_Demo/MechaCar_mpg.csv",stringsAsFactors = F)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+file <- "MechaCar_mpg.csv"
+mecha_car_data <- read.csv(file)
 
-lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD ,data=MechaCar_mpg)
 
-summary(lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD ,data=MechaCar_mpg))
+model_1<-lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD ,data=mecha_car_data)
+
+summary(model_1)
+
+
+suspension_coil_path <- "Suspension_Coil.csv"
+suspension_coil_data <- read.csv(suspension_coil_path)
+
+total_summary <- suspension_coil_data%>%  summarize(mean=mean(PSI),median=median(PSI),variance=var(PSI),std_dev=sd(PSI))
+View(total_summary)
+lot_summary <- suspension_coil_data%>%group_by(Manufacturing_Lot)%>%summarize(mean=mean(PSI),median=median(PSI),variance=var(PSI),std_dev=sd(PSI))
+View(lot_summary)
+setwd("C:/Users/natnael/Documents/UCD Bootcamp/Mod 15 R and Stats/R_Analysis/01_Demo")
+
+t.test(suspension_coil_path$PSI,mu=1500)
+lot1 <- subset(suspension_coil_path, Manufacturing_Lot=="Lot1")
+lot2 <- subset(suspension_coil_path, Manufacturing_Lot=="Lot2")
+lot3 <- subset(suspension_coil_path, Manufacturing_Lot=="Lot3")
+
+t.test(lot1$PSI,mu=1500)
+t.test(lot2$PSI,mu=1500)
+t.test(lot3$PSI,mu=1500)
 
