@@ -1,2 +1,3 @@
 # MechaCar_Statistical_Analysis
-## For this grid, there appears to be a steady rate in terms of vehicle length. Only one of the results had a vehicle length of 20 and nothing else. The same can be said about the ground clearance. The numbers are close apart but the rest of the data for the other categories fluctuate in value.
+## For deliverable 1, there appears to be a steady rate in terms of vehicle length. Only one of the results had a vehicle length of 20 and nothing else. The same can be said about the ground clearance. The numbers are close apart but the rest of the data for the other categories fluctuate in value.
+## As for deliverable 2, the mean, median, variance, and std_dev under total summary consists of one row. For lot summary, mean, median, variance and std_dev are all established and Manufacturing_Lot is a new column. The variance for lot 3 is exceedingly greater than than the variance for lots 1 and 2.
