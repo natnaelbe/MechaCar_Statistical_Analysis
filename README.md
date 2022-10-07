@@ -2,6 +2,7 @@
 ## Linear Regression to Predict MPG
 ## For deliverable 1, there appears to be a steady rate in terms of vehicle length. Only one of the results had a vehicle length of 20 and nothing else. The same can be said about the ground clearance. The numbers are close apart but the rest of the data for the other categories fluctuate in value. 
 ![image](https://user-images.githubusercontent.com/89429991/194431082-c41d3b6f-f0a9-4892-81fd-cd636ec69bd0.png)
+
 I think all the categories related to vehicle length, vehicle weight, spoiler angle, ground clearance, and AWD would qualify as non-random variance. I don't think the slope is zero because we have nonzero values. I don't think this is an effective prediction because becaue it's difficult to predict the outcome of this model with numerical inconsistencies.
 
 ## Summary Statistics on Suspension Coils
@@ -9,12 +10,14 @@ I think all the categories related to vehicle length, vehicle weight, spoiler an
 ![image](https://user-images.githubusercontent.com/89429991/194433655-7bdcabc0-c4d2-4a97-9fed-6a93b686c90e.png)
 
 ![image](https://user-images.githubusercontent.com/89429991/194433768-c0014168-1a05-4a0a-b620-888630cad9ec.png)
+
 The manufacturing data does not meet the requirements. Yes, the variance for the total_summary is approximately 62 pounds, but the variance sum for lot_summary is 177 pounds.
 
 
 
 ## T-Tests on Suspension Coils
 ![image](https://user-images.githubusercontent.com/89429991/194452174-e3dfd24e-957a-469d-a645-81c1a9a8da04.png)
+
 The t-tests for the one-sample t-test including the data for lot 3 have negative values. Lot 1 has a t-value of 0 and lot 2 has a t-value of 0.51745
 
 
