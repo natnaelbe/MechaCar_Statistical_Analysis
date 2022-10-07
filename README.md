@@ -14,6 +14,8 @@ The manufacturing data does not meet the requirements. Yes, the variance for the
 
 
 ## T-Tests on Suspension Coils
+![image](https://user-images.githubusercontent.com/89429991/194452174-e3dfd24e-957a-469d-a645-81c1a9a8da04.png)
+The t-tests for the one-sample t-test including the data for lot 3 have negative values. Lot 1 has a t-value of 0 and lot 2 has a t-value of 0.51745
 
 
 
